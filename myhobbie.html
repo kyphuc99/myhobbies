@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobbies</title>
+    <style>
+      body {
+        background-color: #d5feff;
+      }
+
+      .hobbies {
+        width: 70%;
+        margin: auto;
+        padding: 5px;
+        background-color: white;
+      }
+
+      .form-title {
+        background-color: #ff4c00;
+        color: white;
+        text-align: center;
+      }
+
+      .form-field {
+        color: blue;
+        margin-left: 30px;
+      }
+
+      .form-item {
+        margin-bottom: 10px;
+      }
+
+      .hobby {
+        color: #ff4c00;
+      }
+
+      .side-left {
+        margin-left: 95px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="hobbies">
+      <div for="myHobbies" class="form-title">SỞ THÍCH CỦA BẠN</div>
+      <br />
+      <div class="form-item">
+        <label for="fullName" class="form-field">Họ và tên</label>
+        <input type="text" name="fullName" />
+      </div>
+      <div class="form-item">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="email" class="form-field">Email</label>
+        <input type="text" name="email" /><br />
+      </div>
+      <div class="form-item">
+        &nbsp;
+        <label for="hobbies" class="form-field">Sở thích</label>
+        <input type="checkbox" name="hobbies" value="sport" />
+        <span class="hobby">Thể thao</span>&nbsp;&nbsp;
+
+        <input type="checkbox" name="hobbies" value="music" />
+        <span class="hobby">Âm nhạc</span>&nbsp;&nbsp;&nbsp;
+
+        <input type="checkbox" name="hobbies" value="book" />
+        <span class="hobby">Đọc sách</span>
+      </div>
+      <div class="form-item side-left">
+        <input type="checkbox" name="hobbies" value="web" />
+        <span class="hobby">Lướt Web</span>
+
+        <input type="checkbox" name="hobbies" value="game" />
+        <span class="hobby">Chơi game</span>
+
+        <input type="checkbox" name="hobbies" value="film" />
+        <span class="hobby">Điện ảnh</span>
+      </div>
+      <div class="form-item side-left">
+        <input type="checkbox" name="hobbies" value="travel" />
+        <span class="hobby">Du lịch</span>
+      </div>
+
+      <div class="form-item side-left">
+        <input type="submit" value="Gửi thông tin" />
+        <input type="reset" value="Nhập lại" />
+      </div>
+    </form>
+  </body>
+</html>
